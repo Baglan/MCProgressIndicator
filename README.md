@@ -2,7 +2,7 @@
 
 MCProgressIndicator class helps build discrete (as in "step-by-step") progress indicators using images. Things like that:
 
-[example]
+![Example](https://raw.github.com/Baglan/MCProgressIndicator/master/example.png "Example")
 
 ## Installation
 
