@@ -1,24 +1,19 @@
-//
-//  ViewController.m
-//  MCProgressIndicator
-//
-//  Created by Baglan on 10/19/12.
-//  Copyright (c) 2012 MobileCreators. All rights reserved.
-//
+# MCProgressIndicator
 
-#import "ViewController.h"
-#import "MCProgressIndicator.h"
+MCProgressIndicator class helps build discrete (as in "step-by-step") progress indicators using images. Things like that:
 
-@interface ViewController ()
+[example]
 
-@end
+## Installation
 
-@implementation ViewController
+1. Copy files from the "Classes" folder to your project
+    a. Optionally, copy image assets from the "Assets" folder to your project
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+## Usage
+
+    #import "MCProgressIndicator.h"
+    
+    …
     
     MCProgressIndicator * progressIndicator = [[MCProgressIndicator alloc] init];
     
@@ -38,13 +33,7 @@
     progressIndicator.frame = CGRectMake((containerSize.width - size.width) / 2, 100, size.width, size.height);
 
     [self.view addSubview:progressIndicator];
-    
-}
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+## License
 
-@end
+This project is available under the MIT license.
